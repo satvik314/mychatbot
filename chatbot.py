@@ -9,7 +9,8 @@ from langchain.chains.conversation.memory import ConversationBufferWindowMemory
 
 import os
 
-os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
+# os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
+os.environ["GOOGLE_API_KEY"] = st.secrets["GOOGLE_API_KEY"]
 
 # Initialize session state variables
 if 'buffer_memory' not in st.session_state:
